@@ -16444,6 +16444,7 @@ html {
     margin-right: 120px;
     display: flex;
     position: relative;
+    
   }
   
   .product-sticky-cards {
@@ -19523,6 +19524,7 @@ html {
     }
   
     .product-cards-content {
+      display: none;
       width: 100%;
     }
     .brix---btn-secondary-2{
@@ -21835,7 +21837,7 @@ html {
     }
   
     .blogSection {
-      padding-top: 60px;
+      /* padding-top: 60px; */
     }
   
     .blog-wrapper {
