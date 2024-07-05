@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Contact</title>
+    <script
+        type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "USD", "symbol": "$", "decimal": ".", "fractionDigits": 2, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };</script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+            <script> 
+                $(function(){
+                  $("#header").load("header.html"); 
+                  $("#footer").load("footer.html"); 
+                });
+    </script>
+</head>
+<body >
+
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+        role="banner" class="navbar w-nav ">
+    <div id="header" class="contactHeader "></div>
+    <div class="contactBackground">
+    <div class="contactPage ">
+        <div class="contactSection1">
+        <span class="contactText">Contact Us</span>
+        <h1 class="contactHeading">Get in touch today</h1>
+        <p class="contactPara">We are building the most useful and convenient applications in the field of AI. We look forward to hearing from you.</p>
+        </div>
+        <div class="contactSection2"> 
+            <form action="#" class="contactForm">
+                <div class="formPart1">
+                    <div >
+                        <Label class="label">First Name*</Label>
+                        <input type="text" class="inputField" placeholder="Enter First Name">
+                    </div>
+                    <div>
+                        <label class="label">Last Name*</label>
+                        <input type="text" class="inputField" placeholder="Enter Last Name">
+                    </div>
+                </div>
+                <div>
+                    <Label class="label">Email</Label>
+                    <input type="text" class="inputField" placeholder="Enter your Email">
+                </div>
+                <div>
+                    <Label class="label">Phone</Label>
+                    <input type="text" class="inputField" placeholder="Enter your Phone">
+                </div>
+                <div>
+                    <Label class="label">Phone</Label>
+                    <select name="" id="" class="contactSelect" >
+                        <option>Select one...</option>
+                        <option value="Razi">Razi</option>
+                        <option value="Sinan">Sinan</option>
+                        <option value="Iqraa">Iqraa</option>
+                        <option value="Mofkrah">Mofkrah</option>
+                        <option value="Mirah">Mirah</option>
+                        <option value="Specter">Specter</option>
+                        <option value="Jobs">Jobs</option>
+                    </select>
+                </div>
+                <div>
+                    <Label class="label">Ask your question</Label>
+                    <textarea name="" maxlength="5000" placeholder="Example Text" class="contactTextarea"></textarea>
+                </div>
+                <div class="formButtonContainer"> 
+                <input type="submit" value="Contact us" class="formButton">
+                </div>
+            </form>
+        </div>
+        <div class="contactSection3">
+            <h3 class="contact-h3">Want to reach out directly?</h3>
+            <p class="contact-p2">Reach out to us easily and quickly. We're here and ready to connect!</p>
+            <div class="contactButtons">
+                <a class="contactButton1">
+                <div class="contactButtonPart1">
+                    <img src="./assets/messageIcon.svg" alt="">
+                </div>
+                <div class="contactButtonPart2">
+                    <span class="contactButtonLabel">Email:</span>
+                    <span class="contactButtonPara">support@aroci</span>
+                </div>
+                </a>
+                <a class="contactButton1">
+                    <div class="contactButtonPart1">
+                        <img src="./assets/phoneIcon.svg" alt="">
+                    </div>
+                    <div class="contactButtonPart2">
+                        <span class="contactButtonLabel">Phone:</span>
+                        <span class="contactButtonPara">+971(02)5822726</span>
+                    </div>
+                    </a>
+            
+            </div>
+        </div>
+    </div>  
+</div>
+    <section class="section-container">
+        <!-- <div class="circle-animation-block-23"></div> -->
+    <section class="scene-3">
+    <footer class="footer-wrapper">
+        <div id="footer" class="contactFooter"></div>
+    </footer>
+</section>
+</section>
+    </div>
+</body>
+</html>
