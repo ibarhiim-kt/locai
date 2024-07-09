@@ -1932,7 +1932,15 @@ html {
   .w-lightbox-noscroll {
     overflow: hidden;
   }
-  
+  @media(min-width: 480px){
+    @media(max-width: 1200px){
+      .razi-overview, .specter-overview, .mira-overview,
+      .sinan-overview, .mofkrah-overview, .iqraa-overview{
+        height:650px !important;
+        background-position: center !important;
+      }
+    }
+  }
   @media (min-width: 768px) {
     .w-lightbox-content {
       height: 96vh;
@@ -16576,7 +16584,6 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
-    overflow: hidden;
   }
   
   .ellipse-3 {
@@ -16693,7 +16700,6 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 100px;
-    overflow: hidden;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
   }
   
@@ -16711,7 +16717,6 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 140px;
-    overflow: hidden;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
   }
   
@@ -16779,7 +16784,6 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 160px;
-    overflow: hidden;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
   }
   
@@ -16894,7 +16898,6 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 180px;
-    overflow: hidden;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
   }
   
@@ -16956,7 +16959,6 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 120px;
-    overflow: hidden;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
   }
   
@@ -19809,7 +19811,6 @@ html {
     }
   
     .product-cards-content {
-      display: none;
       width: 100%;
     }
     .brix---btn-secondary-2{
@@ -21509,7 +21510,8 @@ html {
     }
   
     .product-razi-container {
-      max-height: 420px;
+      max-height: 100%;
+      overflow: hidden;
     }
   
     .customer-1-check-text-5 {
@@ -21524,7 +21526,8 @@ html {
     }
   
     .product-specter-container, .product-sinan-container {
-      max-height: 420px;
+      max-height: 100%;
+      overflow:hidden;
     }
   
     .product-sticky-cards {
@@ -21536,7 +21539,8 @@ html {
     }
   
     .product-mofkrah-container {
-      max-height: 420px;
+      max-height: 100%;
+      overflow:hidden;
     }
   
     .mofkrah-overview {
@@ -21549,7 +21553,8 @@ html {
     }
   
     .product-iqraa-container {
-      max-height: 420px;
+      max-height: 100%;
+      overflow:hidden;
     }
   
     .mira-overview {
@@ -21558,7 +21563,8 @@ html {
     }
   
     .product-mira-container {
-      max-height: 420px;
+      max-height: 100%;
+      overflow:hidden;
     }
   }
   
