@@ -246,6 +246,7 @@ html {
   .w-inline-block {
     max-width: 100%;
     display: inline-block;
+    /* overflow: hidden; */
   }
   
   .w-clearfix:before, .w-clearfix:after {
@@ -810,7 +811,7 @@ html {
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -839,7 +840,9 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
+    padding-left: 20px;    
+    padding-right: 20px;
   }
   .contactBackground{
     background: linear-gradient(0deg, rgb(1 1 122) 0%, rgba(0, 0, 0, 1) 100%);
@@ -1200,6 +1203,16 @@ html {
     }
   
     .w-col-small-12 {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:626px) {
+    .contactButtons{
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+    }
+    .contactButton1{
       width: 100%;
     }
   }
@@ -1932,7 +1945,7 @@ html {
   .w-lightbox-noscroll {
     overflow: hidden;
   }
-  @media(min-width: 480px){
+  /* @media(min-width: 480px){
     @media(max-width: 1200px){
       .razi-overview, .specter-overview, .mira-overview,
       .sinan-overview, .mofkrah-overview, .iqraa-overview{
@@ -1940,7 +1953,7 @@ html {
         background-position: center !important;
       }
     }
-  }
+  } */
   @media (min-width: 768px) {
     .w-lightbox-content {
       height: 96vh;
@@ -16584,6 +16597,7 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
+    overflow: hidden;
   }
   
   .ellipse-3 {
@@ -16701,6 +16715,7 @@ html {
     position: sticky;
     top: 100px;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
+    overflow: hidden;
   }
   
   .product-sinan-container {
@@ -16718,6 +16733,7 @@ html {
     position: sticky;
     top: 140px;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
+    overflow: hidden;
   }
   
   .product-cards-content {
@@ -16785,6 +16801,7 @@ html {
     position: sticky;
     top: 160px;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
+    overflow: hidden;
   }
   
   .mofkrah-ellipse {
@@ -16899,6 +16916,7 @@ html {
     position: sticky;
     top: 180px;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
+    overflow: hidden;
   }
   
   .image-mura {
@@ -16960,6 +16978,7 @@ html {
     position: sticky;
     top: 120px;
     box-shadow: 0 -11px 20px rgba(0, 0, 0, .2);
+    overflow: hidden;
   }
   
   @media screen and (min-width: 1280px) {
@@ -19811,6 +19830,7 @@ html {
     }
   
     .product-cards-content {
+      display: none;
       width: 100%;
     }
     .brix---btn-secondary-2{
@@ -19860,6 +19880,9 @@ html {
     .product-mira-container {
       height: 70vh;
       max-height: 520px;
+    }
+    .section-container{
+      background-color: #030C19;
     }
   }
   
@@ -24416,22 +24439,29 @@ html {
       padding-left: 16px;
       padding-right: 16px;
     }
+    
   
     .container-default.footer {
       grid-column-gap: 0px;
       grid-row-gap: 0px;
     }
-  
+    .formPart1{
+      display: flex;
+      flex-direction: column;
+    }
+    .formButtonContainer{
+      justify-content: center;
+    }
     .footer-nav-link.w--current {
       font-size: 16px;
     }
   
     .footer-nav-content {
-      grid-column-gap: 40px;
+      grid-column-gap: 10px;
       grid-row-gap: 0px;
       flex-wrap: wrap;
       grid-template-columns: 1fr 1fr;
-      justify-content: flex-start;
+      /* justify-content: flex-start; */
       display: flex;
     }
   
