@@ -22097,7 +22097,8 @@ html {
   
     .home-hero-heading {
       align-self: stretch;
-      font-size: 55px;
+      /* font-size: 55px; */
+      font-size: 42px;
       line-height: 108%;
       
     }
@@ -23198,7 +23199,7 @@ html {
       align-items: center;
       height: auto;
       padding-top: 60px;
-      display: none;
+      /* display: none; */
     }
   
     .background-video-mobile {
@@ -24548,6 +24549,7 @@ html {
       display: flex;
       padding-left: 0;
       padding-right: 0;
+      display: none;
     }
   
     .home-hero-heading-copy {
